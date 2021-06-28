@@ -10,6 +10,8 @@ def welp():
     print('MM():            Prints FII & DII data. MM: Market Manipulators')
     print('stonk(n):        Prints n Top Gainers (F&O Only)')
     print('stink(n):        Prints n Top Losers (F&O Only)')
+    print('status():        Prints if the markets are Open or Closed')
+    print('nxtOpen():       Prints the next trading date')
 
 def clear():
     os.system('clear')
@@ -29,3 +31,11 @@ def stonk(x=10):
 
 def stink(x=10):
     print(nse.top_losers(index=IndexSymbol.FnO, length=x))
+
+def status():
+    a = nse.market_status()
+    print(a['marketState'][0]['marketStatus'])
+
+def nxtOpen():
+    a = nse.market_status()
+    print(a['marketState'][0]['tradeDate'])
