@@ -1,6 +1,7 @@
 # NSE_Terminal
 
-![](https://img.shields.io/badge/Python-v3.8-blue)
+![](https://img.shields.io/badge/Python-v3.8-blue?style=for-the-badge&logo=python)
+![](https://img.shields.io/github/last-commit/siriusbrightstar/NSE_Terminal?logo=Github&style=for-the-badge)
 
 Gets you Stock data, OI, FII &amp; DII data on the terminal. Based on pyNSE by StreamAlpha
 
